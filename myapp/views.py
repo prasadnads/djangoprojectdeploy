@@ -2,7 +2,7 @@ from re import template
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.urls import reverse_lazy
-from .models import Product,OrderDetail
+from .models import Product
 from django.contrib.auth.decorators import login_required
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
