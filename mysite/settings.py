@@ -33,15 +33,15 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 DEBUG = os.getenv("DEBUG", "False") == "True"
 DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
 
-if DEBUG:
-    STRIPE_PUBLISHABLE_KEY='pk_test_51L3H0uSE8Qj87ozF3APP7FNczyG7Mkm0Jz4JPFEITCzAnGwie9VPdKkz78wbHda8lmbeAF9EZwlri44xALBUf5ZR00UBbCEw4X'
-    STRIPE_SECRET_KEY = 'sk_test_51L3H0uSE8Qj87ozFncUc51DSsRIf9GKnPWZRTJndkx5zBtLKF4NjZO9ldfZ0IbSEsqlhGCPWU5OxmutGukY5lgQP00JPh3jXtq'
+# if DEBUG:
+# STRIPE_PUBLISHABLE_KEY='pk_test_51L3H0uSE8Qj87ozF3APP7FNczyG7Mkm0Jz4JPFEITCzAnGwie9VPdKkz78wbHda8lmbeAF9EZwlri44xALBUf5ZR00UBbCEw4X'
+# STRIPE_SECRET_KEY = 'sk_test_51L3H0uSE8Qj87ozFncUc51DSsRIf9GKnPWZRTJndkx5zBtLKF4NjZO9ldfZ0IbSEsqlhGCPWU5OxmutGukY5lgQP00JPh3jXtq'
 #ALLOWED_HOSTS = [label django_app/settings.py]
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
 
 # Application definition
-
+  
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
