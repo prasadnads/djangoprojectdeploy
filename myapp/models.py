@@ -22,13 +22,13 @@ class Product(models.Model):
     image = models.ImageField(blank=True, upload_to ='images')
 
 
-class OrderDetail(models.Model):
-    customer_username = models.CharField(max_length=200)
-    product = models.ForeignKey(to='product', on_delete=models.PROTECT)
-    amount = models.IntegerField()
-    stripe_payment_intent = models.CharField(max_length=200)
-    has_paid = models.BooleanField(default=False)
-    created_on = models.DateTimeField(auto_now_add=True)
-    update_on = models.DateTimeField(auto_now_add=True)
+# class OrderDetail(models.Model):
+#     customer_username = models.CharField(max_length=200)
+#     product = models.ForeignKey(to='product', on_delete=models.PROTECT)
+#     amount = models.IntegerField()
+#     stripe_payment_intent = models.CharField(max_length=200)
+#     has_paid = models.BooleanField(default=False)
+#     created_on = models.DateTimeField(auto_now_add=True)
+#     update_on = models.DateTimeField(auto_now_add=True)
     
 
