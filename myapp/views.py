@@ -60,7 +60,7 @@ class ProductDetailView(DetailView):
     model =Product
     template_name = 'myapp/detail.html'
     context_object_name = 'product'
-    pk_url_kwarg ='pk'
+    #pk_url_kwarg ='pk'
 
 
     # def get_context_data(self, **kwargs):
